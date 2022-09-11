@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: Arial, Helvetica, sans-serif;             
+}
+header {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    background-color:#ccc;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 990px; 
+    overflow-x: hidden;         
+}
+.logo {
+    display: flex;
+    align-items: center;    
+}
+.logo img {    
+    height: 100px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+nav ul, nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+nav ul {
+    display: flex;
+}
+nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+}
+nav .active a, 
+nav a:hover {
+    background-color: gray;
+    color: #fff;
+}
+#banner {
+    display: flex;
+    justify-content:center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+    url(img/paineldecarro.jpg);     
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 670px; 
+}
+.column {
+    flex-direction: column;
+}
+.banner_headline {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;        
+}
+.banner_headline h1 {
+    color: rgb(226, 225, 210);   
+    font-size: 60px;  
+    text-align: center;          
+    margin: 0;
+    padding: 0;   
+    text-shadow: 1px 1px 0px #000; 
+}
+.banner_headline h2 {
+    color: rgb(173, 161, 46);   
+    font-size: 25px;  
+    text-align: center;       
+    margin: 0;
+    padding: 0; 
+    margin-top: 260px;  
+    text-shadow: 1px 1px 0px #000;     
+}
+.banner_options {    
+    height: 210px;
+    display: flex;
+    justify-content: baseline;  
+}
+.banner1,
+.banner2,
+.banner3 {
+    flex: 1;
+    color: #fff;
+    padding: 20px;    
+}
+.banner1 {
+    background-image: url(img/carronachuva.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;            
+}
+.banner2 {
+    background-image: url(img/carrocompras.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+.banner3 {
+    background-image: url(img/carroemmanutenção.jpg); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+.banner_title {
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(226, 225, 210);
+    text-align:center;
+    text-shadow: 1px 1px 0px #000; 
+    padding-top: 2rem;      
+}
+.banner_desc {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: rgb(173, 161, 46);
+    text-align: center;
+    text-shadow: 1px 1px 0px #000;        
+}
+
+#geral {
+    display: flex;
+    justify-content: center;    
+    background-color: #ccc;    
+}
+.widget_title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.widget_title_text {
+    color: #000;
+    font-size: 21px;
+    font-weight: bold;
+}
+.widget_title_bar {
+    width: 50px;
+    height: 2px;
+    background-color: #36a9e1;
+    margin-top: 10px;
+}
+.widget_body {
+    font-size: 14px;
+} 
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.jober {
+    height: auto;
+    width: 100%;
+    display: flex;    
+    justify-content: space-evenly;
+    margin: 3rem 0;
+}
+.jober img {
+    width: 150px;
+    border-radius: 50%;
+}
+.jober-desc {
+    width: 100%;    
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    padding-left: 30px;
+}
+.jober-desc h1 {
+    font-size: 25px;
+    padding-bottom: 15px;
+}
+.jober-desc img {    
+    max-width: 40px;
+    padding-top: 10px;
+}
+footer {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+.footer_menu {
+    display: flex;    
+}
+.fm_1, .fm_2, .fm_3 {
+    flex: 1;
+    color: #fff;
+    padding: 20px;
+}
+.fm_1 {
+    background-color: #39aae1;
+}
+.fm_2 {
+    background-color: #0079c7;
+}
+.fm_3 {
+    background-color: #2b4c99;
+}
+.footer_area {
+    display: flex;    
+}
+.footer_areaitem {
+    flex: 1;
+    color: #fff;
+}
+.flexColumn {
+    flex-direction: column;
+}
+footer .widget_title_text {
+    color: #fff;
+}
+.footer_copy {
+    border-top: 1px solid #2c2c2c;
+    height: 40px;
+    line-height: 40px;
+    color: #ccc;
+    font-size: 12px;
+    margin-top: 30px;
+    overflow: hidden;
+    text-align: center;
+}
+.footer_copy a {
+    color: #36a9e1;
+}
+.menuMobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+.mm_line {
+    height: 3px;
+    background-color: #36a9e1;
+}
+
+@media (max-width: 450px){         
+    .banner_headline {
+        padding: 20px;
+    }
+    .banner_headline h1 {
+        font-size: 55px;        
+    }
+    .banner_headline h2 {
+        font-size: 17px;
+    }
+    .banner_options {
+        height: auto;
+        flex-direction: column;
+    }
+    .container {
+        flex-direction: column;        
+    }
+    #geral section {
+        padding: 20px;        
+    }
+    .footer_menu {
+        flex-direction: column;
+    }  
+    .footer_area {
+        flex-direction: column;
+        padding: 20px;
+    }   
+    .footer_copy {
+        text-align: center;      
+    }
+
+    header .container {
+        flex-direction: row;
+    }
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+    }
+    header {
+        height: auto;
+    }
+    .logo {
+        padding-left: 20px;
+    }
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }   
+    article {        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;        
+    } 
+    article .jober-desc {
+        max-width: 80%;        
+    }
+}
+@media (min-width: 700px) and (max-width: 1040px) {
+    header {
+        padding-left: 20px; 
+        padding-right: 20px;
+    }
+    section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }    
+    footer {
+        padding-left: 20px;
+        padding-right: 20px;        
+    }    
+    .jober-desc {
+        padding-left: 30px;
+    }       
+}
